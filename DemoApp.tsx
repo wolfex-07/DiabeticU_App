@@ -1,9 +1,9 @@
 import React from "react";
-import { LaunchScreen } from "./src/screens/launch";
+import AppNavigator from "./src/navigations/AppNavigator";
 
 function DiabeticUApp() : React.JSX.Element {
   return (
-    <LaunchScreen/>
+    <AppNavigator/>
   )
 }
 
