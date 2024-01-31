@@ -14,7 +14,7 @@ const LaunchBackGround = () => {
      );
 }
 
-const LaunchScreen = ({navigation}) => {
+const LaunchScreen = ({navigation}: {navigation: any}) => {
     useEffect(() => {
         setTimeout(() => {
             navigation.navigate('LandingPage')

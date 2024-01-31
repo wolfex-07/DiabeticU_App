@@ -12,7 +12,7 @@ function DiabeticUApp() {
    <NavigationContainer>
     <stack.Navigator initialRouteName="LaunchScreen">
      <stack.Screen name = "LaunchScreen" component={LaunchScreen} options={{headerShown:false}}/>
-     <stack.Screen name = "LandingPage" component={LandingPage} options={{headerShown:true}}/>
+     <stack.Screen name = "LandingPage" component={LandingPage} options={{headerShown:false}}/>
     </stack.Navigator>
    </NavigationContainer>
   )
