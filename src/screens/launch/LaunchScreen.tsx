@@ -5,13 +5,13 @@ import { LandingPage } from '../auth/Landing/index';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import AppImages from '../../Constants/Images';
 
 
 const LaunchBackGround = () => {
     return (
-        <ImageBackground  style = {{height: '100%', width: '100%'}}
-        source={require('/Users/admin/Desktop/ReactProjects/DiabeticUdemo/DiabeticUDemo/src/assets/Splash.png')}/>
-     );
+        <ImageBackground  style = {{height: '100%', width: '100%'}} source={AppImages.splash}/>
+    );
 }
 
 const LaunchScreen = ({navigation}: {navigation: any}) => {
@@ -25,7 +25,5 @@ const LaunchScreen = ({navigation}: {navigation: any}) => {
         <LaunchBackGround/>
      )
 };
-
-
 
 export default LaunchScreen;
