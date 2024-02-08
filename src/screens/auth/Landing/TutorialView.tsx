@@ -6,7 +6,9 @@ import AppImages from '../../../Constants/Images';
 const { width } = Dimensions.get('window');
 
 const images = [
-  AppImages.landingImgFirst,AppImages.landingImgFirst,AppImages.landingImgFirst
+  AppImages.landingImgFirst,
+  AppImages.landingImgFirst,
+  AppImages.landingImgFirst
 ];
 
 const TutorialView = () => {
@@ -29,6 +31,7 @@ const TutorialView = () => {
         renderItem={({ item }) => (
         <View style={{width: width}}>
             <Image 
+            source={item}
              style={styles.image} />
             <H1 style={{textAlign: 'center'}}>Customised Meal Plan</H1>
             <Paragraph style={{}}>A personalised meal plan designed for individual preferences and goals.</Paragraph>
@@ -51,10 +54,12 @@ const TutorialView = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1.1,
+    flex: 1,
   },
   image: {
     //height: 200,
+    //backgroundColor: 'red',
+    width: Dimensions.get('window').width,
     flex: 1,
     resizeMode: 'center',
   },
