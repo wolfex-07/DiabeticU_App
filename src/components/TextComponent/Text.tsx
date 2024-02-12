@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-type children = {children: String, style: any}
+type children = {children: ReactNode, style: any}
 export const H1 = ({ children, style}: children ) => (
   <Text style={[styles.h1, style]}>{children}</Text>
 );

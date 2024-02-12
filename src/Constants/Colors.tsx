@@ -1,7 +1,10 @@
 export default {
-    primary: '#007bff',
-    secondary: '#6c757d',
-    background: '#f8f9fa',
-    text: '#343a40',
+    primary: '#000080',
+    secondary: '#F6F6F6',
+    activityPrimary: 'pink',
+    background: '#ffffff',
+    text: '#000000',
+    error: '#DA2A31',
+    valid: '#320A71',
     accent: '#ffc107',
 };
